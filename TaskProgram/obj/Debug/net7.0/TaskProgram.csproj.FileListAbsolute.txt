@@ -1,0 +1,15 @@
+C:\Users\Kost\Desktop\GbI\TaskProgram\bin\Debug\net7.0\TaskProgram.exe
+C:\Users\Kost\Desktop\GbI\TaskProgram\bin\Debug\net7.0\TaskProgram.deps.json
+C:\Users\Kost\Desktop\GbI\TaskProgram\bin\Debug\net7.0\TaskProgram.runtimeconfig.json
+C:\Users\Kost\Desktop\GbI\TaskProgram\bin\Debug\net7.0\TaskProgram.dll
+C:\Users\Kost\Desktop\GbI\TaskProgram\bin\Debug\net7.0\TaskProgram.pdb
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.csproj.AssemblyReference.cache
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.AssemblyInfoInputs.cache
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.AssemblyInfo.cs
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.csproj.CoreCompileInputs.cache
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.dll
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\refint\TaskProgram.dll
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.pdb
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\TaskProgram.genruntimeconfig.cache
+C:\Users\Kost\Desktop\GbI\TaskProgram\obj\Debug\net7.0\ref\TaskProgram.dll
