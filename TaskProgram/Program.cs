@@ -3,7 +3,7 @@
     return array.Where(x=> x.Length <= countOfDigits).ToArray();
 }
 
-string[] ArrayItemNumDegree(string[] array, int countOfDigits)
+string[] ArrayItemNumDegree(string[] array, int countOfDigits) // Вариант через дополнительный массив
 {
     int[] itemNumDegreeId = new int[array.Length];
     int countOfItems = 0;
@@ -23,11 +23,11 @@ string[] ArrayItemNumDegree(string[] array, int countOfDigits)
     return resultArray;
 }
 
-string[] OneCycleMethod(string[] array)
+string[] ResizeMethod(string[] array, int countOfDigits) // Вариант через изменение размера массива
 {
     for(int i = 0; i < array.Length; i++)
     {
-        if(array[i].Length > 3) 
+        if(array[i].Length > countOfDigits) 
         {
             string temp = array[array.Length - 1];
             array[array.Length - 1] = array[i];
@@ -38,31 +38,30 @@ string[] OneCycleMethod(string[] array)
     return array;
 }
 
-string[] AppendMethod(string[] array)
+string[] AppendMethod(string[] array, int countOfDigits) // Вариант через добваление эелементов в конец нового изначально пустого массива
 {
     string[] result = new string[0];
     for(int i = 0; i < array.Length; i++)
-        if(array[i].Length <= 3) result.Append(array[i]);
+        if(array[i].Length <= countOfDigits) result.Append(array[i]);
     return result;
 }
 
 string[] array1 = new string[4] {"hello", "2", "world", ":-)"};
-Console.WriteLine($"[{string.Join(",",array1)}]->[{string.Join(",", ArrayItemNumDegreeLinq(array1, 3))}]");
 string[] array2 = new string[4] {"1234", "1567", "-2", "computer science"};
-Console.WriteLine($"[{string.Join(",",array2)}]->[{string.Join(",", ArrayItemNumDegreeLinq(array2, 2))}]");
 string[] array3 = new string[3] {"Russia", "Denmark", "Kazan"};
-Console.WriteLine($"[{string.Join(",",array3)}]->[{string.Join(",", ArrayItemNumDegreeLinq(array3, 1))}]");
+
+Console.WriteLine($"[{string.Join(",",array1)}]->[{string.Join(",", ArrayItemNumDegreeLinq(array1, 3))}]");
+Console.WriteLine($"[{string.Join(",",array2)}]->[{string.Join(",", ArrayItemNumDegreeLinq(array2, 3))}]");
+Console.WriteLine($"[{string.Join(",",array3)}]->[{string.Join(",", ArrayItemNumDegreeLinq(array3, 3))}]");
 Console.WriteLine();
-
-string[] array4 = new string[4] {"hello", "2", "world", ":-)"};
-Console.WriteLine($"[{string.Join(",",array4)}]->[{string.Join(",", ArrayItemNumDegree(array4, 3))}]");
-string[] array5 = new string[4] {"1234", "1567", "-2", "computer science"};
-Console.WriteLine($"[{string.Join(",",array5)}]->[{string.Join(",", ArrayItemNumDegree(array5, 2))}]");
-string[] array6 = new string[3] {"Russia", "Denmark", "Kazan"};
-Console.WriteLine($"[{string.Join(",",array6)}]->[{string.Join(",", ArrayItemNumDegree(array6, 1))}]");
-
-string[] array = new string[4] {"hello", "2", "world", ":-)"};
-Console.WriteLine($"[{string.Join(",", OneCycleMethod(array))}]");
-
-string[] marray = new string[4] {"hello", "2", "world", ":-)"};
-Console.WriteLine($"[{string.Join(",", AppendMethod(array))}]");
+Console.WriteLine($"[{string.Join(",",array1)}]->[{string.Join(",", ArrayItemNumDegree(array1, 3))}]");
+Console.WriteLine($"[{string.Join(",",array2)}]->[{string.Join(",", ArrayItemNumDegree(array2, 3))}]");
+Console.WriteLine($"[{string.Join(",",array3)}]->[{string.Join(",", ArrayItemNumDegree(array3, 3))}]");
+Console.WriteLine();
+Console.WriteLine($"[{string.Join(",",array1)}]->[{string.Join(",", ResizeMethod(array1, 3))}]");
+Console.WriteLine($"[{string.Join(",",array2)}]->[{string.Join(",", ResizeMethod(array2, 3))}]");
+Console.WriteLine($"[{string.Join(",",array3)}]->[{string.Join(",", ResizeMethod(array3, 3))}]");
+Console.WriteLine();
+Console.WriteLine($"[{string.Join(",",array1)}]->[{string.Join(",", AppendMethod(array1, 3))}]");
+Console.WriteLine($"[{string.Join(",",array2)}]->[{string.Join(",", AppendMethod(array2, 3))}]");
+Console.WriteLine($"[{string.Join(",",array3)}]->[{string.Join(",", AppendMethod(array3, 3))}]");
