@@ -33,6 +33,7 @@ string[] ResizeMethod(string[] array, int countOfDigits) // Вариант че�
             string temp = array[countOfItems];
             array[countOfItems] = array[i];
             array[i] = temp;
+            countOfItems++;
         }
         else Array.Resize(ref array, i);
     }
